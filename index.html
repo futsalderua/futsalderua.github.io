@@ -1,0 +1,3534 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Futsal de Rúa | Vigo · 22-23 Decembro 2026</title>
+
+<meta name="description"
+content="Futsal de Rúa. Torneo de fútbol sala en Vigo. 22 e 23 de decembro de 2026. Inscricións abertas.">
+
+<meta name="theme-color" content="#2F6F95">
+
+<style>
+
+/* =====================================================
+PALETA EXTRAÍDA DO LOGO
+===================================================== */
+
+:root {
+--navy: #2F6F95;
+--navy-dark: #174A68;
+--navy-light: #5B9FC2;
+
+--orange: #FF8A3D;
+--orange-dark: #F06A24;
+
+--yellow: #FFD84D;
+
+--cream: #FFFDF5;
+--cream-dark: #FFF1D6;
+
+--white: #ffffff;
+--black: #101417;
+
+--gray: #667781;
+--light-gray: #F0F4F6;
+
+--green: #35B878;
+
+--radius: 20px;
+
+--shadow:
+0 20px 60px rgba(16,37,54,.15);
+}
+
+
+/* =====================================================
+RESET
+===================================================== */
+
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family:
+Arial,
+Helvetica,
+sans-serif;
+
+background: var(--cream);
+
+color: var(--black);
+
+line-height: 1.5;
+
+overflow-x: hidden;
+}
+
+a {
+text-decoration: none;
+color: inherit;
+}
+
+img {
+max-width: 100%;
+display: block;
+}
+
+button,
+input,
+select {
+font: inherit;
+}
+
+
+/* =====================================================
+HEADER
+===================================================== */
+
+header {
+position: fixed;
+
+top: 0;
+left: 0;
+
+width: 100%;
+
+z-index: 1000;
+
+padding: 15px 5%;
+
+transition: .3s ease;
+}
+
+header.scrolled {
+background:
+rgba(16,37,54,.95);
+
+backdrop-filter:
+blur(14px);
+
+box-shadow:
+0 10px 40px
+rgba(0,0,0,.2);
+}
+
+.nav {
+max-width: 1250px;
+
+margin: auto;
+
+display: flex;
+
+justify-content:
+space-between;
+
+align-items: center;
+}
+
+
+.nav-logo {
+display: flex;
+
+align-items: center;
+
+gap: 12px;
+
+color: white;
+
+font-weight: 900;
+
+letter-spacing: 1px;
+}
+
+
+.nav-logo img {
+width: 48px;
+height: 48px;
+
+object-fit: cover;
+
+border-radius: 50%;
+
+border:
+2px solid
+rgba(255,255,255,.5);
+}
+
+
+.nav-links {
+display: flex;
+
+align-items: center;
+
+gap: 27px;
+
+color: white;
+
+font-size: 14px;
+
+font-weight: 800;
+}
+
+.nav-links a {
+opacity: .88;
+
+transition: .2s;
+}
+
+.nav-links a:hover {
+color: var(--yellow);
+
+opacity: 1;
+}
+
+
+.nav-button {
+background:
+var(--orange);
+
+color:
+white !important;
+
+padding:
+12px 20px;
+
+border-radius:
+999px;
+
+opacity: 1 !important;
+
+transition: .2s;
+}
+
+.nav-button:hover {
+background:
+var(--orange-dark);
+
+transform:
+translateY(-2px);
+}
+
+
+.mobile-menu {
+display: none;
+
+color: white;
+
+font-size: 28px;
+
+cursor: pointer;
+}
+
+
+/* =====================================================
+HERO
+===================================================== */
+
+.hero {
+
+min-height: 100vh;
+
+position: relative;
+
+color: white;
+
+display: flex;
+
+align-items: center;
+
+overflow: hidden;
+
+background:
+var(--navy-dark);
+}
+
+
+/* IMAGEN DEL LOGO COMO FONDO */
+
+.hero-background {
+
+position: absolute;
+
+inset: 0;
+
+background-image:
+url("logo pista.jpeg");
+
+background-size:
+cover;
+
+background-position:
+center;
+
+filter:
+saturate(.9);
+}
+
+
+/* CAPA OSCURA */
+
+.hero-background::after {
+
+content: "";
+
+position: absolute;
+
+inset: 0;
+
+background:
+linear-gradient(
+90deg,
+rgba(16,37,54,.96) 0%,
+rgba(16,37,54,.82) 42%,
+rgba(16,37,54,.38) 100%
+);
+}
+
+
+/* DETALLES DE COLOR */
+
+.hero::before {
+
+content: "";
+
+position: absolute;
+
+width: 550px;
+
+height: 550px;
+
+border-radius: 50%;
+
+border:
+1px solid
+rgba(208,168,92,.25);
+
+right: -200px;
+
+top: -200px;
+}
+
+
+.hero-content {
+
+position: relative;
+
+z-index: 2;
+
+width: 90%;
+
+max-width: 1250px;
+
+margin: auto;
+
+padding-top: 70px;
+}
+
+
+.hero-logo {
+
+width: 120px;
+
+height: 120px;
+
+object-fit: cover;
+
+border-radius: 50%;
+
+border:
+2px solid
+rgba(255,255,255,.5);
+
+margin-bottom: 25px;
+
+box-shadow:
+0 15px 50px
+rgba(0,0,0,.3);
+}
+
+
+.eyebrow {
+
+color:
+var(--yellow);
+
+text-transform:
+uppercase;
+
+font-size:
+13px;
+
+font-weight:
+900;
+
+letter-spacing:
+4px;
+
+margin-bottom:
+15px;
+}
+
+
+.hero h1 {
+
+font-size:
+clamp(58px, 10vw, 135px);
+
+line-height:
+.86;
+
+letter-spacing:
+-6px;
+
+font-weight:
+950;
+
+max-width:
+1000px;
+}
+
+
+.hero h1 span {
+
+color:
+var(--orange);
+}
+
+
+.hero-subtitle {
+
+margin-top:
+30px;
+
+font-size:
+clamp(18px, 2vw, 25px);
+
+max-width:
+650px;
+
+color:
+#eef1f2;
+}
+
+
+.hero-date {
+
+margin-top:
+22px;
+
+font-weight:
+900;
+
+font-size:
+17px;
+
+letter-spacing:
+1px;
+}
+
+
+.hero-actions {
+
+margin-top:
+35px;
+
+display:
+flex;
+
+gap:
+14px;
+
+flex-wrap:
+wrap;
+}
+
+
+.btn {
+
+display:
+inline-flex;
+
+align-items:
+center;
+
+justify-content:
+center;
+
+padding:
+15px 25px;
+
+border-radius:
+999px;
+
+font-weight:
+900;
+
+border:
+1px solid transparent;
+
+cursor:
+pointer;
+
+transition:
+.25s;
+}
+
+
+.btn-primary {
+
+background:
+var(--orange);
+
+color:
+white;
+}
+
+
+.btn-primary:hover {
+
+transform:
+translateY(-3px);
+
+background:
+var(--orange-dark);
+
+box-shadow:
+0 15px 35px
+rgba(195,109,63,.3);
+}
+
+
+.btn-secondary {
+
+border-color:
+rgba(255,255,255,.4);
+
+color:
+white;
+
+background:
+rgba(255,255,255,.05);
+}
+
+
+.btn-secondary:hover {
+
+background:
+white;
+
+color:
+var(--navy);
+}
+
+
+/* =====================================================
+COUNTDOWN
+===================================================== */
+
+.countdown-wrapper {
+
+margin-top:
+50px;
+
+max-width:
+760px;
+}
+
+
+.countdown-title {
+
+text-transform:
+uppercase;
+
+font-size:
+11px;
+
+letter-spacing:
+3px;
+
+color:
+#d4d9dc;
+
+margin-bottom:
+13px;
+}
+
+
+.countdown {
+
+display:
+grid;
+
+grid-template-columns:
+repeat(4,1fr);
+
+gap:
+10px;
+}
+
+
+.time-box {
+
+background:
+rgba(16,37,54,.78);
+
+border:
+1px solid
+rgba(255,255,255,.16);
+
+border-radius:
+15px;
+
+padding:
+17px 10px;
+
+text-align:
+center;
+
+backdrop-filter:
+blur(10px);
+}
+
+
+.time-box strong {
+
+display:
+block;
+
+font-size:
+30px;
+
+color:
+white;
+}
+
+
+.time-box span {
+
+color:
+#c1c8cc;
+
+text-transform:
+uppercase;
+
+font-size:
+9px;
+
+letter-spacing:
+2px;
+}
+
+
+/* =====================================================
+SECCIONES GENERALES
+===================================================== */
+
+section {
+
+padding:
+100px 5%;
+}
+
+
+.container {
+
+max-width:
+1150px;
+
+margin:
+auto;
+}
+
+
+.section-label {
+
+text-transform:
+uppercase;
+
+font-size:
+11px;
+
+letter-spacing:
+3px;
+
+color:
+var(--navy-light);
+
+font-weight:
+900;
+
+margin-bottom:
+10px;
+}
+
+
+.section-title {
+
+font-size:
+clamp(38px,6vw,70px);
+
+line-height:
+.95;
+
+letter-spacing:
+-2px;
+
+margin-bottom:
+25px;
+}
+
+
+.section-title span {
+
+color:
+var(--orange);
+}
+
+
+/* =====================================================
+TORNEO
+===================================================== */
+
+.info {
+
+background:
+var(--cream);
+}
+
+
+.info-grid {
+
+display:
+grid;
+
+grid-template-columns:
+1.2fr .8fr;
+
+gap:
+60px;
+
+align-items:
+center;
+}
+
+
+.intro-text {
+
+font-size:
+20px;
+
+color:
+#454f55;
+
+max-width:
+700px;
+}
+
+
+.info-cards {
+
+display:
+grid;
+
+grid-template-columns:
+repeat(2,1fr);
+
+gap:
+14px;
+}
+
+
+.info-card {
+
+background:
+white;
+
+border-radius:
+var(--radius);
+
+padding:
+25px;
+
+box-shadow:
+0 10px 35px
+rgba(32,59,80,.08);
+
+border:
+1px solid
+rgba(32,59,80,.08);
+}
+
+
+.info-card .icon {
+
+font-size:
+28px;
+
+margin-bottom:
+12px;
+}
+
+
+.info-card h3 {
+
+font-size:
+16px;
+
+margin-bottom:
+4px;
+
+color:
+var(--navy);
+}
+
+
+.info-card p {
+
+color:
+#777;
+
+font-size:
+14px;
+}
+
+
+/* =====================================================
+PREMIOS
+===================================================== */
+
+.prizes {
+
+background:
+var(--navy-dark);
+
+color:
+white;
+}
+
+
+.prizes .section-label {
+
+color:
+var(--yellow);
+}
+
+
+.prizes .section-title span {
+
+color:
+var(--orange);
+}
+
+
+.prize-grid {
+
+display:
+grid;
+
+grid-template-columns:
+1.3fr 1fr 1fr;
+
+gap:
+18px;
+}
+
+
+.prize {
+
+border:
+1px solid
+rgba(255,255,255,.12);
+
+border-radius:
+22px;
+
+padding:
+35px;
+
+background:
+linear-gradient(
+145deg,
+#2F6F95,
+#174A68
+);
+
+position:
+relative;
+
+overflow:
+hidden;
+}
+
+
+.prize.featured {
+
+border-color:
+rgba(195,109,63,.7);
+
+transform:
+translateY(-10px);
+}
+
+
+.prize-number {
+
+color:
+var(--yellow);
+
+font-size:
+13px;
+
+text-transform:
+uppercase;
+
+letter-spacing:
+3px;
+
+font-weight:
+900;
+}
+
+
+.prize-money {
+
+font-size:
+clamp(50px,7vw,90px);
+
+font-weight:
+950;
+
+line-height:
+1;
+
+margin:
+25px 0 10px;
+}
+
+
+.prize p {
+
+color:
+#bfc8cd;
+}
+
+
+.individual-prizes {
+
+margin-top:
+18px;
+
+display:
+grid;
+
+grid-template-columns:
+repeat(2,1fr);
+
+gap:
+18px;
+}
+
+
+.individual {
+
+background:
+#2F6F95;
+
+border:
+1px solid
+rgba(255,255,255,.1);
+
+padding:
+25px;
+
+border-radius:
+18px;
+}
+
+
+.individual h3 {
+
+margin-bottom:
+5px;
+}
+
+
+.individual p {
+
+color:
+#bfc8cd;
+}
+
+
+/* =====================================================
+INSCRICIONS
+===================================================== */
+
+.registration {
+
+background:
+var(--cream-dark);
+}
+
+
+.registration-layout {
+
+display:
+grid;
+
+grid-template-columns:
+.8fr 1.2fr;
+
+gap:
+60px;
+
+align-items:
+start;
+}
+
+
+.registration-note {
+
+background:
+var(--navy-dark);
+
+color:
+white;
+
+border-radius:
+24px;
+
+padding:
+35px;
+
+position:
+sticky;
+
+top:
+100px;
+}
+
+
+.registration-note .section-label {
+
+color:
+var(--yellow);
+}
+
+
+.registration-note h3 {
+
+font-size:
+30px;
+
+margin-bottom:
+15px;
+}
+
+
+.registration-note p {
+
+color:
+#bfc8cd;
+
+margin-bottom:
+20px;
+}
+
+
+.requirements {
+
+list-style:
+none;
+}
+
+
+.requirements li {
+
+padding:
+11px 0;
+
+border-bottom:
+1px solid
+rgba(255,255,255,.1);
+
+font-size:
+14px;
+}
+
+
+.requirements li::before {
+
+content:
+"✓";
+
+color:
+var(--orange);
+
+font-weight:
+bold;
+
+margin-right:
+10px;
+}
+
+
+.form-box {
+
+background:
+white;
+
+padding:
+35px;
+
+border-radius:
+25px;
+
+box-shadow:
+var(--shadow);
+}
+
+
+.form-box h3 {
+
+font-size:
+30px;
+
+margin-bottom:
+8px;
+
+color:
+var(--navy);
+}
+
+
+.form-description {
+
+color:
+#777;
+
+margin-bottom:
+30px;
+}
+
+
+.form-grid {
+
+display:
+grid;
+
+grid-template-columns:
+repeat(2,1fr);
+
+gap:
+18px;
+}
+
+
+.field {
+
+display:
+flex;
+
+flex-direction:
+column;
+
+gap:
+7px;
+}
+
+
+.field.full {
+
+grid-column:
+1/-1;
+}
+
+
+.field label {
+
+font-size:
+12px;
+
+text-transform:
+uppercase;
+
+font-weight:
+900;
+
+letter-spacing:
+1px;
+
+color:
+var(--navy);
+}
+
+
+.field input,
+.field select {
+
+border:
+1px solid #ddd;
+
+background:
+#fafafa;
+
+padding:
+14px;
+
+border-radius:
+10px;
+
+outline:
+none;
+
+transition:
+.2s;
+}
+
+
+.field input:focus,
+.field select:focus {
+
+border-color:
+var(--orange);
+
+background:
+white;
+}
+
+
+.payment-box {
+
+grid-column:
+1/-1;
+
+background:
+#FFF4EA;
+
+border:
+1px solid
+#FFE0C9;
+
+padding:
+20px;
+
+border-radius:
+14px;
+
+margin-top:
+5px;
+}
+
+
+.payment-box strong {
+
+display:
+block;
+
+margin-bottom:
+5px;
+
+color:
+var(--navy);
+}
+
+
+.payment-box p {
+
+color:
+#666;
+
+font-size:
+14px;
+}
+
+
+.checkbox {
+
+display:
+flex;
+
+align-items:
+flex-start;
+
+gap:
+10px;
+
+grid-column:
+1/-1;
+
+font-size:
+13px;
+
+color:
+#555;
+}
+
+
+.checkbox input {
+
+margin-top:
+4px;
+}
+
+
+.submit-btn {
+
+grid-column:
+1/-1;
+
+width:
+100%;
+
+border:
+none;
+
+padding:
+17px;
+
+border-radius:
+12px;
+
+background:
+var(--navy);
+
+color:
+white;
+
+font-weight:
+900;
+
+cursor:
+pointer;
+
+transition:
+.2s;
+}
+
+
+.submit-btn:hover {
+
+background:
+var(--orange);
+}
+
+
+.success-message {
+
+display:
+none;
+
+margin-top:
+20px;
+
+background:
+#E5FAEF;
+
+color:
+#16945E;
+
+border-radius:
+12px;
+
+padding:
+18px;
+
+font-weight:
+700;
+}
+
+
+/* =====================================================
+PATROCINADORES
+===================================================== */
+
+.sponsors {
+
+background:
+white;
+}
+
+
+.sponsor-grid {
+
+display:
+grid;
+
+grid-template-columns:
+repeat(4,1fr);
+
+gap:
+18px;
+}
+
+
+.sponsor {
+
+border:
+1px solid
+#e1e4e5;
+
+border-radius:
+20px;
+
+padding:
+28px;
+
+display:
+flex;
+
+flex-direction:
+column;
+
+justify-content:
+space-between;
+
+min-height:
+230px;
+
+transition:
+.25s;
+}
+
+
+.sponsor:hover {
+
+transform:
+translateY(-5px);
+
+box-shadow:
+0 15px 40px
+rgba(32,59,80,.1);
+}
+
+
+/* PROMOCIÓN */
+
+.sponsor.promo {
+
+border:
+2px solid
+var(--orange);
+
+box-shadow:
+0 10px 35px
+rgba(195,109,63,.12);
+}
+
+
+.promo-tag {
+
+display:
+inline-block;
+
+background:
+var(--orange);
+
+color:
+white;
+
+padding:
+5px 9px;
+
+border-radius:
+999px;
+
+font-size:
+9px;
+
+font-weight:
+900;
+
+letter-spacing:
+1px;
+
+margin-bottom:
+18px;
+}
+
+
+.sponsor h3 {
+
+font-size:
+23px;
+
+margin-bottom:
+8px;
+
+color:
+var(--navy);
+}
+
+
+.sponsor p {
+
+color:
+#777;
+
+font-size:
+14px;
+}
+
+
+.sponsor a {
+
+margin-top:
+20px;
+
+font-size:
+12px;
+
+font-weight:
+900;
+
+color:
+var(--orange);
+}
+
+
+/* =====================================================
+LOCALIZACION / COMIDA
+===================================================== */
+
+.venue {
+
+background:
+var(--cream);
+}
+
+
+.venue-grid {
+
+display:
+grid;
+
+grid-template-columns:
+1fr 1fr;
+
+gap:
+20px;
+}
+
+
+.venue-card {
+
+background:
+white;
+
+padding:
+35px;
+
+border-radius:
+22px;
+
+border:
+1px solid
+rgba(32,59,80,.08);
+}
+
+
+.venue-card.dark {
+
+background:
+var(--navy);
+
+color:
+white;
+}
+
+
+.venue-card h3 {
+
+font-size:
+28px;
+
+margin-bottom:
+12px;
+}
+
+
+.venue-card p {
+
+color:
+#777;
+}
+
+
+.venue-card.dark p {
+
+color:
+#d0d8dc;
+}
+
+
+.venue-link {
+
+display:
+inline-block;
+
+margin-top:
+22px;
+
+font-weight:
+900;
+
+color:
+var(--orange);
+}
+
+
+/* =====================================================
+REDES
+===================================================== */
+
+.social {
+
+background:
+var(--navy-dark);
+
+color:
+white;
+
+text-align:
+center;
+}
+
+
+.social .section-label {
+
+color:
+var(--yellow);
+}
+
+
+.social h2 {
+
+font-size:
+clamp(42px,7vw,80px);
+
+line-height:
+.95;
+
+margin-bottom:
+20px;
+}
+
+
+.social p {
+
+color:
+#bdc7cc;
+
+max-width:
+600px;
+
+margin:
+auto;
+}
+
+
+.social-buttons {
+
+display:
+flex;
+
+justify-content:
+center;
+
+gap:
+12px;
+
+margin-top:
+30px;
+
+flex-wrap:
+wrap;
+}
+
+
+/* =====================================================
+FOOTER
+===================================================== */
+
+footer {
+
+background:
+#0a1822;
+
+color:
+#87949c;
+
+padding:
+30px 5%;
+}
+
+
+.footer-inner {
+
+max-width:
+1150px;
+
+margin:
+auto;
+
+display:
+flex;
+
+justify-content:
+space-between;
+
+align-items:
+center;
+
+gap:
+20px;
+}
+
+
+footer strong {
+
+color:
+white;
+}
+
+
+/* =====================================================
+RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+
+.nav-links {
+
+display:
+none;
+
+position:
+absolute;
+
+top:
+75px;
+
+left:
+5%;
+
+right:
+5%;
+
+background:
+var(--navy-dark);
+
+padding:
+20px;
+
+border-radius:
+18px;
+
+flex-direction:
+column;
+
+align-items:
+stretch;
+}
+
+
+.nav-links.active {
+
+display:
+flex;
+}
+
+
+.nav-links a {
+
+padding:
+12px;
+}
+
+
+.mobile-menu {
+
+display:
+block;
+}
+
+
+.info-grid,
+.registration-layout,
+.venue-grid {
+
+grid-template-columns:
+1fr;
+}
+
+
+.registration-note {
+
+position:
+static;
+}
+
+
+.prize-grid {
+
+grid-template-columns:
+1fr;
+}
+
+
+.prize.featured {
+
+transform:
+none;
+}
+
+
+.sponsor-grid {
+
+grid-template-columns:
+repeat(2,1fr);
+}
+}
+
+
+@media (max-width: 600px) {
+
+section {
+
+padding:
+75px 5%;
+}
+
+
+.hero h1 {
+
+letter-spacing:
+-3px;
+}
+
+
+.hero-logo {
+
+width:
+90px;
+
+height:
+90px;
+}
+
+
+.countdown {
+
+grid-template-columns:
+repeat(2,1fr);
+}
+
+
+.form-grid {
+
+grid-template-columns:
+1fr;
+}
+
+
+.field.full,
+.payment-box,
+.checkbox,
+.submit-btn {
+
+grid-column:
+1;
+}
+
+
+.info-cards {
+
+grid-template-columns:
+1fr;
+}
+
+
+.sponsor-grid {
+
+grid-template-columns:
+1fr;
+}
+
+
+.individual-prizes {
+
+grid-template-columns:
+1fr;
+}
+
+
+.form-box {
+
+padding:
+22px;
+}
+
+
+.footer-inner {
+
+flex-direction:
+column;
+
+text-align:
+center;
+}
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+HEADER
+===================================================== -->
+
+<header id="header">
+
+<nav class="nav">
+
+<a href="#inicio" class="nav-logo">
+
+<img
+src="logo.png"
+alt="Logo Futsal de Rúa"
+>
+
+<span>
+FUTSAL DE RÚA
+</span>
+
+</a>
+
+
+<div
+class="nav-links"
+id="navLinks"
+>
+
+<a href="#torneo">
+O Torneo
+</a>
+
+<a href="#premios">
+Premios
+</a>
+
+<a href="#inscricions">
+Inscricións
+</a>
+
+<a href="#patrocinadores">
+Patrocinadores
+</a>
+
+<a href="#localizacion">
+Localización
+</a>
+
+<a
+href="#inscricions"
+class="nav-button"
+>
+INSCRÍBETE
+</a>
+
+</div>
+
+
+<div
+class="mobile-menu"
+id="mobileMenu"
+>
+☰
+</div>
+
+</nav>
+
+</header>
+
+
+<!-- =====================================================
+HERO
+===================================================== -->
+
+<section
+class="hero"
+id="inicio"
+>
+
+<div class="hero-background"></div>
+
+
+<div class="hero-content">
+
+
+<img
+src="logo.png"
+alt="Logo Futsal de Rúa"
+class="hero-logo"
+>
+
+
+<div class="eyebrow">
+
+Vigo · Galicia · Fútbol Sala
+
+</div>
+
+
+<h1>
+
+FUTSAL<br>
+
+DE <span>RÚA.</span>
+
+</h1>
+
+
+<p class="hero-subtitle">
+
+O fútbol da rúa,
+levado á pista.
+
+</p>
+
+
+<div class="hero-date">
+
+22 · 23 DECEMBRO 2026
+
+</div>
+
+
+<div class="hero-actions">
+
+
+<a
+href="#inscricions"
+class="btn btn-primary"
+>
+
+⚡ INSCRICIÓNS
+
+</a>
+
+
+<a
+href="#torneo"
+class="btn btn-secondary"
+>
+
+COÑECE O TORNEO
+
+</a>
+
+
+</div>
+
+
+<!-- COUNTDOWN -->
+
+<div class="countdown-wrapper">
+
+
+<div class="countdown-title">
+
+Peche das inscricións ·
+7 Decembro 2026
+
+</div>
+
+
+<div class="countdown">
+
+
+<div class="time-box">
+
+<strong id="days">
+00
+</strong>
+
+<span>
+Días
+</span>
+
+</div>
+
+
+<div class="time-box">
+
+<strong id="hours">
+00
+</strong>
+
+<span>
+Horas
+</span>
+
+</div>
+
+
+<div class="time-box">
+
+<strong id="minutes">
+00
+</strong>
+
+<span>
+Minutos
+</span>
+
+</div>
+
+
+<div class="time-box">
+
+<strong id="seconds">
+00
+</strong>
+
+<span>
+Segundos
+</span>
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+O TORNEO
+===================================================== -->
+
+<section
+class="info"
+id="torneo"
+>
+
+<div class="container">
+
+
+<div class="info-grid">
+
+
+<div>
+
+
+<div class="section-label">
+
+O torneo
+
+</div>
+
+
+<h2 class="section-title">
+
+Máis que un<br>
+
+<span>torneo.</span>
+
+</h2>
+
+
+<p class="intro-text">
+
+Futsal de Rúa nace para xuntar
+competición, amigos, fútbol sala
+e a esencia da rúa.
+
+</p>
+
+
+<p
+class="intro-text"
+style="margin-top:20px;"
+>
+
+Dous días de fútbol,
+ambiente e competición en Vigo.
+
+Aquí non vés simplemente a xogar.
+Vés formar parte da edición.
+
+</p>
+
+
+</div>
+
+
+<div class="info-cards">
+
+
+<div class="info-card">
+
+<div class="icon">
+📅
+</div>
+
+<h3>
+22 · 23 Decembro
+</h3>
+
+<p>
+Dous días de fútbol sala.
+</p>
+
+</div>
+
+
+<div class="info-card">
+
+<div class="icon">
+📍
+</div>
+
+<h3>
+Vigo
+</h3>
+
+<p>
+Pista de Fútbol Sala.
+</p>
+
+</div>
+
+
+<div class="info-card">
+
+<div class="icon">
+👥
+</div>
+
+<h3>
+Equipos
+</h3>
+
+<p>
+Entre 5 e 15 xogadores.
+</p>
+
+</div>
+
+
+<div class="info-card">
+
+<div class="icon">
+🏆
+</div>
+
+<h3>
+Premios
+</h3>
+
+<p>
+500 € · 100 € · 50 €
++ premios individuais.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+PREMIOS
+===================================================== -->
+
+<section
+class="prizes"
+id="premios"
+>
+
+<div class="container">
+
+
+<div class="section-label">
+A competición
+</div>
+
+
+<h2 class="section-title">
+
+Hai moito<br>
+
+<span>en xogo.</span>
+
+</h2>
+
+
+<div class="prize-grid">
+
+
+<!-- 1º -->
+
+<div class="prize featured">
+
+<div class="prize-number">
+Campión
+</div>
+
+
+<div class="prize-money">
+500€
+</div>
+
+
+<p>
+
+Primeiro equipo clasificado.
+
+Trofeo + premio económico.
+
+</p>
+
+</div>
+
+
+<!-- 2º -->
+
+<div class="prize">
+
+<div class="prize-number">
+Subcampión
+</div>
+
+
+<div class="prize-money">
+100€
+</div>
+
+
+<p>
+Segundo equipo clasificado.
+</p>
+
+</div>
+
+
+<!-- 3º -->
+
+<div class="prize">
+
+<div class="prize-number">
+Terceiro
+</div>
+
+
+<div class="prize-money">
+50€
+</div>
+
+
+<p>
+Terceiro equipo clasificado.
+</p>
+
+</div>
+
+
+</div>
+
+
+<!-- PREMIOS INDIVIDUAIS -->
+
+<div class="individual-prizes">
+
+
+<div class="individual">
+
+<h3>
+🧤 Mellor Porteiro
+</h3>
+
+<p>
+
+Premio individual,
+trofeo ou agasallo
+proporcionado por un patrocinador.
+
+</p>
+
+</div>
+
+
+<div class="individual">
+
+<h3>
+⭐ MVP da Final
+</h3>
+
+<p>
+
+Premio individual para o xogador
+máis destacado da final.
+
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+INSCRICIONS
+===================================================== -->
+
+<section
+class="registration"
+id="inscricions"
+>
+
+<div class="container">
+
+
+<div class="registration-layout">
+
+
+<!-- INFORMACION -->
+
+<div class="registration-note">
+
+
+<div class="section-label">
+Participa
+</div>
+
+
+<h3>
+
+A túa praza<br>
+comeza aquí.
+
+</h3>
+
+
+<p>
+
+O pago completo da inscrición é de <b style="font-size: xx-large;">50€</b>/equipo
+
+</p>
+
+
+<ul class="requirements">
+
+
+<li>
+Nome do equipo
+</li>
+
+
+<li>
+Capitán / representante
+</li>
+
+
+<li>
+Teléfono de contacto
+</li>
+
+
+<li>
+Correo electrónico
+</li>
+
+
+<li>
+Entre 5 e 15 xogadores
+</li>
+
+
+<li>
+Instagram do equipo
+</li>
+
+
+</ul>
+
+
+<p style="margin-top:25px;">
+
+📲 Unha vez revisada a inscrición,
+o equipo será confirmado a través
+dunha historia no Instagram do torneo,
+mencionando a súa conta.
+
+</p>
+
+
+</div>
+
+
+
+<!-- FORMULARIO -->
+
+<div class="form-box">
+
+
+<h3>
+Inscrición do equipo
+</h3>
+
+
+<p class="form-description">
+
+Enche todos os campos.
+Os datos da inscrición serán enviados
+directamente ao correo da organización.
+
+</p>
+
+
+<form
+id="registrationForm"
+action="https://formsubmit.co/futsalderua36203@gmail.com"
+method="POST"
+>
+
+
+<input
+type="hidden"
+name="_subject"
+value="🏆 NOVA INSCRICIÓN · FUTSAL DE RÚA"
+>
+
+
+<input
+type="hidden"
+name="_captcha"
+value="false"
+>
+
+
+<input
+type="hidden"
+name="_template"
+value="table"
+>
+
+
+<!-- ANTISPAM -->
+
+<input
+type="text"
+name="_honey"
+style="display:none"
+>
+
+
+<div class="form-grid">
+
+
+<!-- EQUIPO -->
+
+<div class="field full">
+
+<label for="team">
+Nome do equipo *
+</label>
+
+
+<input
+id="team"
+type="text"
+name="Nome do equipo"
+placeholder="Ex. Os de Sempre"
+required
+>
+
+</div>
+
+
+<!-- CAPITAN -->
+
+<div class="field">
+
+<label for="captain">
+Capitán / representante *
+</label>
+
+
+<input
+id="captain"
+type="text"
+name="Capitán / representante"
+required
+>
+
+</div>
+
+
+<!-- TELEFONO -->
+
+<div class="field">
+
+<label for="phone">
+Teléfono *
+</label>
+
+
+<input
+id="phone"
+type="tel"
+name="Teléfono"
+placeholder="+34 600 000 000"
+required
+>
+
+</div>
+
+
+<!-- EMAIL -->
+
+<div class="field">
+
+<label for="email">
+Correo electrónico *
+</label>
+
+
+<input
+id="email"
+type="email"
+name="Correo electrónico"
+placeholder="equipo@email.com"
+required
+>
+
+</div>
+
+
+<!-- JUGADORES -->
+
+<div class="field">
+
+<label for="players">
+Número de xogadores *
+</label>
+
+
+<select
+id="players"
+name="Número de xogadores"
+required
+>
+
+<option value="">
+Selecciona
+</option>
+
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+<option>10</option>
+<option>11</option>
+<option>12</option>
+<option>13</option>
+<option>14</option>
+<option>15</option>
+
+</select>
+
+</div>
+
+
+<!-- INSTAGRAM -->
+
+<div class="field full">
+
+<label for="instagram">
+Instagram do equipo *
+</label>
+
+
+<input
+id="instagram"
+type="text"
+name="Instagram do equipo"
+placeholder="@equipo"
+required
+>
+
+<!-- CHECKBOX -->
+
+<label class="checkbox">
+
+<input
+type="checkbox"
+required
+>
+
+
+<span>
+
+Confirmo que os datos introducidos
+son correctos e que o equipo coñece
+as condicións da inscrición.
+
+</span>
+
+</label>
+
+
+<!-- BOTON -->
+
+<button
+type="submit"
+class="submit-btn"
+>
+
+ENVIAR INSCRICIÓN →
+
+</button>
+
+
+</div>
+
+</form>
+
+
+<!-- MENSAJE DE EXITO -->
+
+<div class="success-message" id="successMessage">
+    <strong>Inscrición enviada correctamente.</strong>
+    <p>
+        Recibimos os datos do teu equipo e serán revisados
+        pola organización.
+    </p>
+    <p>
+        O prezo total da inscrición é de
+        <strong>50 € por equipo</strong>.
+    </p>
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+PATROCINADORES
+===================================================== -->
+
+<section
+class="sponsors"
+id="patrocinadores"
+>
+
+<div class="container">
+
+
+<div class="section-label">
+Patrocinadores
+</div>
+
+
+<h2 class="section-title">
+
+Os que están<br>
+
+<span>con nós.</span>
+
+</h2>
+
+
+<div class="sponsor-grid">
+
+
+<!-- ANTON VILADRICH -->
+
+<div class="sponsor promo">
+
+
+<div>
+
+<span class="promo-tag">
+
+PROMOCIÓN PARA XOGADORES
+
+</span>
+
+
+<h3>
+
+Fisioterapeuta
+Antón Viladrich
+
+</h3>
+
+
+<p>
+
+Condicións especiais para
+os participantes do torneo.
+
+</p>
+
+</div>
+
+
+<a
+href="https://citacentrodesalud.com/galicia/pontevedra/vigo-anton-viladrich-valledor-fisioterapeuta-6139/"
+target="_blank"
+rel="noopener"
+>
+
+VER PROMOCIÓN →
+
+</a>
+
+
+</div>
+
+
+
+<!-- NACHO CARRANZA -->
+
+<div class="sponsor">
+
+
+<div>
+
+<h3>
+
+Nacho Carranza
+
+</h3>
+
+
+<p>
+
+Barbería colaboradora
+do torneo.
+
+</p>
+
+</div>
+
+
+<a
+href="https://barbershopmap.com/barberias/pontevedra/vigo/nacho-carranza-barberia-1720#google_vignette"
+target="_blank"
+rel="noopener"
+>
+
+VER PATROCINADOR →
+
+</a>
+
+
+</div>
+
+
+
+<!-- LA BOHEME -->
+
+<div class="sponsor">
+
+
+<div>
+
+<h3>
+
+La Bohème
+
+</h3>
+
+
+<p>
+
+Florista colaboradora
+do Futsal de Rúa.
+
+</p>
+
+</div>
+
+
+<a
+href="https://labohemeflor.es/"
+target="_blank"
+rel="noopener"
+>
+
+VER PATROCINADOR →
+
+</a>
+
+
+</div>
+
+
+
+<!-- LA DE MANU -->
+
+<div class="sponsor">
+
+
+<div>
+
+<h3>
+
+La de Manu
+
+</h3>
+
+
+<p>
+
+Establecemento situado
+ao lado do campo.
+
+</p>
+
+</div>
+
+
+<a
+href="https://www.paxinasgalegas.es/la-de-manu-650749em.html"
+target="_blank"
+rel="noopener"
+>
+
+VER LOCAL →
+
+</a>
+
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+LOCALIZACION + COMIDA
+===================================================== -->
+
+<section
+class="venue"
+id="localizacion"
+>
+
+<div class="container">
+
+
+<div class="section-label">
+
+Vigo
+
+</div>
+
+
+<h2 class="section-title">
+
+Pista, comida<br>
+
+e <span>ambiente.</span>
+
+</h2>
+
+
+<div class="venue-grid">
+
+
+<!-- CANTINA -->
+
+<div class="venue-card dark">
+
+
+<h3>
+
+🍔 Haberá cantina
+
+</h3>
+
+
+<p>
+
+Durante o torneo haberá cantina
+para que xogadores e acompañantes
+poidan comer e beber sen ter que
+afastarse da zona da competición.
+
+</p>
+
+
+<p style="margin-top:15px;">
+
+E se queredes saír da pista para comer,
+tamén podedes facelo en
+<strong style="color:white;">
+La de Manu
+</strong>,
+o bar situado ao lado do campo.
+
+</p>
+
+
+<a
+class="venue-link"
+href="https://www.paxinasgalegas.es/la-de-manu-650749em.html"
+target="_blank"
+rel="noopener"
+>
+
+VER LOCAL →
+
+</a>
+
+
+</div>
+
+
+
+<!-- CAMPO -->
+
+<div class="venue-card">
+
+
+<h3>
+
+📍 Onde xogamos?
+
+</h3>
+
+
+<p>
+
+Pista de Fútbol Sala · Vigo
+
+</p>
+
+
+<p style="margin-top:12px;">
+
+Consulta a localización exacta
+directamente en Google Maps.
+
+</p>
+
+
+<a
+class="venue-link"
+href="https://www.google.com/maps/place/Pista+de+F%C3%BAtbol+Sala/@42.2274747,-8.7256445,20z/data=!4m6!3m5!1s0xd2f630601e9c287:0x7eac6de63f6b379!8m2!3d42.2274968!4d-8.7253407!16s%2Fg%2F11p4751v1q?hl=es&entry=ttu&gep=EgoyMDI2MDkxNC4wIKXMDSoASAFQAw%3D%3D"
+target="_blank"
+rel="noopener"
+>
+
+ABRIR EN GOOGLE MAPS →
+
+</a>
+
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+REDES
+===================================================== -->
+
+<section class="social">
+
+
+<div class="container">
+
+
+<div class="section-label">
+
+Futsal de Rúa
+
+</div>
+
+
+<h2>
+
+Isto non acaba<br>
+
+na pista.
+
+</h2>
+
+
+<p>
+
+Sigue o torneo nas redes para ver equipos
+confirmados, novidades, resultados, fotos,
+vídeos, patrocinadores e todo o que pase
+arredor da competición.
+
+</p>
+
+
+<div class="social-buttons">
+
+
+<!-- INSTAGRAM -->
+
+<a
+href="https://www.instagram.com/futsalderua_203/"
+target="_blank"
+rel="noopener"
+class="btn btn-primary"
+>
+
+INSTAGRAM
+
+</a>
+
+
+<a
+href="https://www.tiktok.com/@lv_torneohispanidad"
+target="_blank"
+rel="noopener"
+class="btn btn-primary"
+>
+
+TIKTOK
+
+</a>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+FOOTER
+===================================================== -->
+
+<footer>
+
+
+<div class="footer-inner">
+
+
+<div>
+
+<strong>
+FUTSAL DE RÚA
+</strong>
+
+<br>
+
+<span>
+Vigo · 22/23 Decembro 2026
+</span>
+
+</div>
+
+
+<div>
+
+© 2026 Futsal de Rúa
+
+</div>
+
+
+</div>
+
+</footer>
+
+
+
+<script>
+
+
+/* =====================================================
+HEADER
+===================================================== */
+
+const header =
+document.getElementById("header");
+
+
+window.addEventListener(
+"scroll",
+() => {
+
+if (window.scrollY > 40) {
+
+header.classList.add("scrolled");
+
+} else {
+
+header.classList.remove("scrolled");
+
+}
+
+}
+);
+
+
+
+/* =====================================================
+MENU MOBILE
+===================================================== */
+
+const mobileMenu =
+document.getElementById("mobileMenu");
+
+
+const navLinks =
+document.getElementById("navLinks");
+
+
+mobileMenu.addEventListener(
+"click",
+() => {
+
+navLinks.classList.toggle(
+"active"
+);
+
+}
+);
+
+
+document
+.querySelectorAll(".nav-links a")
+.forEach(
+link => {
+
+link.addEventListener(
+"click",
+() => {
+
+navLinks.classList.remove(
+"active"
+);
+
+}
+);
+
+}
+);
+
+
+
+/* =====================================================
+COUNTDOWN
+
+FECHA LIMITE:
+7 DECEMBRO 2026
+23:59:59
+===================================================== */
+
+const registrationDate =
+new Date(
+"2026-12-07T23:59:59+01:00"
+).getTime();
+
+
+function updateCountdown() {
+
+
+const now =
+new Date().getTime();
+
+
+const distance =
+registrationDate - now;
+
+
+if (distance <= 0) {
+
+
+document
+.getElementById("days")
+.textContent = "00";
+
+
+document
+.getElementById("hours")
+.textContent = "00";
+
+
+document
+.getElementById("minutes")
+.textContent = "00";
+
+
+document
+.getElementById("seconds")
+.textContent = "00";
+
+
+document
+.querySelector(".countdown-title")
+.textContent =
+"As inscricións están pechadas";
+
+
+return;
+
+}
+
+
+const days =
+Math.floor(
+distance /
+(1000 * 60 * 60 * 24)
+);
+
+
+const hours =
+Math.floor(
+(
+distance %
+(1000 * 60 * 60 * 24)
+) /
+(1000 * 60 * 60)
+);
+
+
+const minutes =
+Math.floor(
+(
+distance %
+(1000 * 60 * 60)
+) /
+(1000 * 60)
+);
+
+
+const seconds =
+Math.floor(
+(
+distance %
+(1000 * 60)
+) /
+1000
+);
+
+
+document
+.getElementById("days")
+.textContent =
+String(days)
+.padStart(2,"0");
+
+
+document
+.getElementById("hours")
+.textContent =
+String(hours)
+.padStart(2,"0");
+
+
+document
+.getElementById("minutes")
+.textContent =
+String(minutes)
+.padStart(2,"0");
+
+
+document
+.getElementById("seconds")
+.textContent =
+String(seconds)
+.padStart(2,"0");
+
+}
+
+
+updateCountdown();
+
+
+setInterval(
+updateCountdown,
+1000
+);
+
+
+
+/* =====================================================
+FORMULARIO
+ENVÍO DIRECTO AO CORREO DA ORGANIZACIÓN
+===================================================== */
+
+const form =
+document.getElementById(
+"registrationForm"
+);
+
+
+const successMessage =
+document.getElementById(
+"successMessage"
+);
+
+
+form.addEventListener(
+"submit",
+async function(event) {
+
+
+event.preventDefault();
+
+
+const submitButton =
+form.querySelector(
+".submit-btn"
+);
+
+
+submitButton.disabled =
+true;
+
+
+submitButton.textContent =
+"ENVIANDO...";
+
+
+const formData =
+new FormData(form);
+
+
+try {
+
+
+const response =
+await fetch(
+form.action,
+{
+method: "POST",
+
+body: formData,
+
+headers: {
+"Accept":
+"application/json"
+}
+}
+);
+
+
+if (response.ok) {
+
+
+form.reset();
+
+
+successMessage.style.display =
+"block";
+
+
+successMessage.scrollIntoView(
+{
+behavior:
+"smooth",
+
+block:
+"center"
+}
+);
+
+
+submitButton.textContent =
+"INSCRICIÓN ENVIADA ✓";
+
+
+} else {
+
+
+throw new Error(
+"Erro no envío"
+);
+
+}
+
+
+} catch (error) {
+
+
+alert(
+"Houbo un problema ao enviar a inscrición. "
++
+"Podes contactar connosco por Instagram."
+);
+
+
+submitButton.disabled =
+false;
+
+
+submitButton.textContent =
+"ENVIAR INSCRICIÓN →";
+
+}
+
+}
+);
+
+</script>
+
+
+</body>
+</html>
